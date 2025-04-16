@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern":
+	[
+		"CCC",
+		"CHC",
+		"CCC"
+	],
+	"key": {
+		"C":
+		{
+			"item": "minecraft:coal_block",
+			"data": 0
+		},
+		"H":
+		{
+			"item": "minecraft:chest",
+			"data": 0
+		}
+	},
+	"result":
+	{
+		"item": "coalgenerator:coal_chest"
+	}
+}

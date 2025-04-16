@@ -1,0 +1,8 @@
+{
+	"particles": {
+		"texture": "coalgenerator:textures/blocks/coal_chest.png",
+		"size": 0.5,
+		"count": 10,
+		"speed": 0.1
+	}
+}

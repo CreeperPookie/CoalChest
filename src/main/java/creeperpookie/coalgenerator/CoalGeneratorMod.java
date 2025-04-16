@@ -16,7 +16,7 @@ public class CoalGeneratorMod
 {
 	public static final String MODID = "coalgenerator";
 	public static final String NAME = "Coal Generator";
-	public static final String VERSION = "1.0";
+	public static final String VERSION = "1.0.1";
 
 	private static Logger logger;
 

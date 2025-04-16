@@ -71,7 +71,7 @@ public class TileEntityCoalChest extends TileEntityChest
 				this.setInventorySlotContents(i, new ItemStack(Blocks.COAL_BLOCK, increment));
 				break;
 			}
-			else if (itemstack.getCount() < itemstack.getMaxStackSize())
+			else if (isWhitelistedForDupe(itemstack.getItem()) && itemstack.getCount() < itemstack.getMaxStackSize())
 			{
 				getStackInSlot(i).grow(increment);
 				break;
@@ -138,6 +138,11 @@ public class TileEntityCoalChest extends TileEntityChest
 	public String getGuiID()
 	{
 		return "coalgenerator:coal_chest";
+	}
+
+	private boolean isWhitelistedForDupe(Item item)
+	{
+		return item == Items.COAL || item == Item.getItemFromBlock(Blocks.COAL_BLOCK) || item == Item.getItemFromBlock(Blocks.DIRT) || item == Item.getItemFromBlock(Blocks.GRAVEL) || item == Item.getItemFromBlock(Blocks.SAND) || item == Item.getItemFromBlock(Blocks.COBBLESTONE) || item == Item.getItemFromBlock(Blocks.STONE) || item == Item.getItemFromBlock(Blocks.STONEBRICK) || item == Item.getItemFromBlock(Blocks.CLAY) || item == Item.getItemFromBlock(Blocks.SANDSTONE) || item == Item.getItemFromBlock(Blocks.RED_SANDSTONE) || item == Item.getItemFromBlock(Blocks.NETHERRACK) || item == Item.getItemFromBlock(Blocks.SOUL_SAND) || item == Item.getItemFromBlock(Blocks.END_STONE) || item == Item.getItemFromBlock(Blocks.OBSIDIAN) || item == Item.getItemFromBlock(Blocks.MYCELIUM) || item == Item.getItemFromBlock(Blocks.GRASS) || item == Item.getItemFromBlock(Blocks.HARDENED_CLAY) || item == Item.getItemFromBlock(Blocks.STAINED_HARDENED_CLAY) || item == Item.getItemFromBlock(Blocks.BRICK_BLOCK) || item == Item.getItemFromBlock(Blocks.MOSSY_COBBLESTONE) || item == Item.getItemFromBlock(Blocks.GLASS);
 	}
 
 	private void setNeighbor(TileEntityCoalChest chestTe, EnumFacing side)

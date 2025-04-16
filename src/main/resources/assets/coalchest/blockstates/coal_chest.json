@@ -1,0 +1,9 @@
+{
+	"variants":
+	{
+		"facing=north": { "model": "coalchest:coal_chest_empty" },
+		"facing=east": { "model": "coalchest:coal_chest_empty", "y": 90 },
+		"facing=south": { "model": "coalchest:coal_chest_empty", "y": 180 },
+		"facing=west": { "model": "coalchest:coal_chest_empty", "y": 270 }
+	}
+}

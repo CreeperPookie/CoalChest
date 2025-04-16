@@ -1,7 +1,7 @@
-package creeperpookie.coalgenerator.renderers;
+package creeperpookie.coalchest.renderers;
 
-import creeperpookie.coalgenerator.items.CoalGeneratorItems;
-import creeperpookie.coalgenerator.tile.TileEntityCoalChest;
+import creeperpookie.coalchest.items.CoalChestItems;
+import creeperpookie.coalchest.tile.TileEntityCoalChest;
 import net.minecraft.client.renderer.tileentity.TileEntityItemStackRenderer;
 import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.item.ItemStack;
@@ -15,7 +15,7 @@ public class TileEntityCoalChestItemRenderer extends TileEntityItemStackRenderer
 	public void renderByItem(ItemStack itemStackIn, float partialTicks)
 	{
 		super.renderByItem(itemStackIn, partialTicks);
-		if (itemStackIn.getItem() == CoalGeneratorItems.coalChestItem)
+		if (itemStackIn.getItem() == CoalChestItems.coalChestItem)
 		{
 			TileEntityRendererDispatcher.instance.render(chest, 0.0D, 0.0D, 0.0D, 0.0F, partialTicks);
 		}

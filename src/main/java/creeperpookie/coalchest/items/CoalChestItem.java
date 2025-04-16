@@ -1,6 +1,5 @@
-package creeperpookie.coalgenerator.items;
+package creeperpookie.coalchest.items;
 
-import creeperpookie.coalgenerator.renderers.TileEntityCoalChestItemRenderer;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 

@@ -1,6 +1,7 @@
-package creeperpookie.coalgenerator.blocks;
+package creeperpookie.coalchest.blocks;
 
-import creeperpookie.coalgenerator.tile.TileEntityCoalChest;
+import creeperpookie.coalchest.CoalChestMod;
+import creeperpookie.coalchest.tile.TileEntityCoalChest;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockChest;
 import net.minecraft.block.BlockHorizontal;
@@ -32,8 +33,8 @@ public class BlockCoalChest extends BlockChest
 	{
 		super(type);
 		this.setTickRandomly(true);
-		setUnlocalizedName("coalgenerator.coal_chest");
-		setRegistryName("coalgenerator:coal_chest");
+		setUnlocalizedName(CoalChestMod.MODID + ".coal_chest");
+		setRegistryName(CoalChestMod.MODID + ":coal_chest");
 	}
 
 	@Override

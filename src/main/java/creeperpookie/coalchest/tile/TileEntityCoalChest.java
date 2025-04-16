@@ -1,6 +1,6 @@
-package creeperpookie.coalgenerator.tile;
+package creeperpookie.coalchest.tile;
 
-import creeperpookie.coalgenerator.blocks.BlockCoalChest;
+import creeperpookie.coalchest.blocks.BlockCoalChest;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockChest;
 import net.minecraft.init.Blocks;
@@ -137,7 +137,7 @@ public class TileEntityCoalChest extends TileEntityChest
 	@Override
 	public String getGuiID()
 	{
-		return "coalgenerator:coal_chest";
+		return "coalchest:coal_chest";
 	}
 
 	private boolean isWhitelistedForDupe(Item item)

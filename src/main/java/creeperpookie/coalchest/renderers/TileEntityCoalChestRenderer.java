@@ -1,8 +1,8 @@
-package creeperpookie.coalgenerator.renderers;
+package creeperpookie.coalchest.renderers;
 
-import creeperpookie.coalgenerator.CoalGeneratorMod;
-import creeperpookie.coalgenerator.blocks.BlockCoalChest;
-import creeperpookie.coalgenerator.tile.TileEntityCoalChest;
+import creeperpookie.coalchest.CoalChestMod;
+import creeperpookie.coalchest.blocks.BlockCoalChest;
+import creeperpookie.coalchest.tile.TileEntityCoalChest;
 import net.minecraft.block.Block;
 import net.minecraft.client.model.ModelChest;
 import net.minecraft.client.model.ModelLargeChest;
@@ -12,8 +12,8 @@ import net.minecraft.util.ResourceLocation;
 
 public class TileEntityCoalChestRenderer extends TileEntitySpecialRenderer<TileEntityCoalChest>
 {
-	private static final ResourceLocation TEXTURE_NORMAL = new ResourceLocation(CoalGeneratorMod.MODID, "textures/entity/coal_chest.png");
-	private static final ResourceLocation TEXTURE_NORMAL_DOUBLE = new ResourceLocation(CoalGeneratorMod.MODID, "textures/entity/coal_chest_double.png");
+	private static final ResourceLocation TEXTURE_NORMAL = new ResourceLocation(CoalChestMod.MODID, "textures/entity/coal_chest.png");
+	private static final ResourceLocation TEXTURE_NORMAL_DOUBLE = new ResourceLocation(CoalChestMod.MODID, "textures/entity/coal_chest_double.png");
 	private final ModelChest simpleChest = new ModelChest();
 	private final ModelChest largeChest = new ModelLargeChest();
 

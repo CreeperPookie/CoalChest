@@ -1,9 +1,9 @@
-package creeperpookie.coalgenerator.blocks;
+package creeperpookie.coalchest.blocks;
 
 import net.minecraft.block.BlockChest;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
-public class CoalGeneratorBlocks
+public class CoalChestBlocks
 {
 	public static BlockCoalChest blockCoalChest;
 

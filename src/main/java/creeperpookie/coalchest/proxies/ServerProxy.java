@@ -1,4 +1,4 @@
-package creeperpookie.coalgenerator.proxies;
+package creeperpookie.coalchest.proxies;
 
 public class ServerProxy extends CommonProxy
 {

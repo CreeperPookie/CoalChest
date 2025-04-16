@@ -1,17 +1,17 @@
-package creeperpookie.coalgenerator.items;
+package creeperpookie.coalchest.items;
 
-import creeperpookie.coalgenerator.blocks.CoalGeneratorBlocks;
+import creeperpookie.coalchest.blocks.CoalChestBlocks;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
-public class CoalGeneratorItems
+public class CoalChestItems
 {
 	public static ItemBlock coalChestItem;
 
 	public static void registerItems()
 	{
 		// Register items here
-		coalChestItem = new CoalChestItem(CoalGeneratorBlocks.blockCoalChest);
+		coalChestItem = new CoalChestItem(CoalChestBlocks.blockCoalChest);
 		ForgeRegistries.ITEMS.register(coalChestItem);
 	}
 }
